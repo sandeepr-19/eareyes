@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Saira+Stencil+One);
+
+/*------------------------------------------
+ space wrap canvas 
+ -------------------------------------------*/
+canvas {
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+ body{
+  color: rgb(141, 146, 161);
+ }
+ #scrollsnap{
+  overflow-y: scroll;
+  scroll-snap-type:y mandatory;
+ } 
+ section{
+  scroll-snap-align: start;
+  align-items: center;
+  justify-content: center;
+ }
+ #event-name{
+  font-size: 10vw;
+  font-weight: 20%;
+   font-family: "Saira Stencil One", cursive;
+ }
+#boom{
+position: absolute;
+top: 25%;
+right: 30%;
+width: 200px;
+height: 200px;
+/* background-image: url("boom5.webp"); */
+background-size: cover;
+animation: crash 8s linear;
+}
+@keyframes crash {
+0%{
+translate: -100vw;
+background-image: url('../assets/object.webp');
+}
+49%{
+  background-image: url('../assets/object.webp')
+}
+49.1%{
+  translate: 0;
+  background-image: url('../assets/boom3.webp');
+}
+
+}
+
+#about{
+  color:cornsilk;
+}
+
+#box {
+  box-shadow: 0px 5px 10px 5px rgba(0,255,255,0.7);
+ }
+#box:hover{
+  transform: translateY(-7px);
+  box-shadow: 0px 10px 20px 2px rgba(0,255,255,0.7);
+}
