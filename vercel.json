@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "Eareyes2k22",
+    "builds": [
+      { "src": "index.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/index.js" }
+    ]
+  }
