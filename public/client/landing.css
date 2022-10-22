@@ -26,6 +26,12 @@ general
 #about{
   color:cornsilk;
 }
+
+#hero-dep{
+  font-size: 5vw;
+  position: realtive;
+    text-align:center;
+}
 /* ------------------------------
 neon box effect 
 ---------------------------------*/
