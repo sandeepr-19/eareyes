@@ -1,5 +1,5 @@
 doctype html
-html(lang='en').h-100.mw-100
+html(lang='en').h-100
     head
         meta(charset='UTF-8')
         meta(http-equiv='X-UA-Compatible' content='IE=edge')
@@ -16,7 +16,7 @@ html(lang='en').h-100.mw-100
         link(rel='stylesheet' href='./client/landing.css')
         title Eareyes
     body.h-100
-        header.ms-2
+        header.ms-2.fixed-top
             nav.navbar 
                 ul.nav-menu 
                     li.nav-item 
@@ -34,18 +34,18 @@ html(lang='en').h-100.mw-100
                     span.bar
                     span.bar
         div.h-100#scrollsnap
-            section#hero.min-vh-100.vw-100.d-flex
+            section#hero.min-vh-100.mw-100.d-flex.ss
                 .d-flex.flex-column.mx-auto
                     .d-flex.mx-auto#title
                         p.h1.me-2#event-name Eareyes
                         p.h3.my-auto#hinge 2022
                     p.h4.mx-auto#hero-dep Department of Electronics and Instrumentation Engineering
                     img#boom(src="../assets/object.webp")
-            section#about.min-vh-100.mw-100.d-flex
-                .d-flex.flex-column.px-5
-                    #box.border.rounded-4.p-4.m-5
-                        p.h2 About The Department
-                        p.h6
+            section#about.mw-100
+                .d-flex.px-5.vh-100.w-100.ss1
+                    #box.m-5
+                        p.h2#ah1 About The Department
+                        p.h6#ap1
                             | The Department of Electronics and Instrumentation
                             | Engineering is offering a full time four year B.E
                             | degree course in Electronics and Instrumentation
@@ -60,45 +60,24 @@ html(lang='en').h-100.mw-100
                             | Instrumentation, Virtual Instrumentation, DSP, PLC
                             | and DCS. Competent faculty and established library
                             | are the highlights of theDepartment.
-
-                    #box.border.rounded-4.p-4.m-5
-                        p.h2 About The Event
-                        p.h6 National Level Inter College Techinal Symposium hosted by department of electronics and instrumentation engineering in coordination with EIE Association to ensure that any talent shouldn't go unaccounted and to be regarded with reward and recognition. This have always been the motive for SENSONICS throughout the years. So once again on the year 2022 this wonderful platform have been created for intellectual minds to exhibit skills on their area of interest and an opportunity to explore and develop in both Social and technical sides.
-                    #box.border.rounded-4.p-4.m-5
-                        h2 Registration Details
-                        p
+                .d-flex.ss.vh-100.w-100
+                    #box.m-5
+                        p.h2#ah2 About The Event
+                        p.h6#ap2 National Level Inter College Techinal Symposium hosted by department of electronics and instrumentation engineering in coordination with EIE Association to ensure that any talent shouldn't go unaccounted and to be regarded with reward and recognition. This have always been the motive for SENSONICS throughout the years. So once again on the year 2022 this wonderful platform have been created for intellectual minds to exhibit skills on their area of interest and an opportunity to explore and develop in both Social and technical sides.
+                .d-flex.px-5.ss.vh-100.w-100
+                    #box.m-5
+                        h2.h2#ah3 Registration Details
+                        p.h6#ap3
                             | Registration fee for technical and non-technical event will be 250/-per person. 
-                        br
-                        strong For Queries:
-                        br
-                        | Dharani Dharan D - +91 9361502532 
-                        br
-                        | Sree Vadhani M - +91 9344304667
-            section#events.min-vh-100.w-100.d-flex
-                #carouselExampleFade.carousel.slide.carousel-fade(data-bs-ride='carousel')
-                    .carousel-inner
-                        .carousel-item.active
-                            img.d-block.w-75.h-50(src='./assets/about-bg.jpg' alt='..6n6.')
-                            .carousel-caption.d-none.d-md-block
-                                p.h4 First slide label
-                                p.h6 Some representative placeholder content for the first slide.
-                        .carousel-item
-                            img.d-block.w-75.h-50(src='./assets/blend-with.jpg' alt='.6n6n..')
-                            .carousel-caption.d-none.d-md-block
-                                p.h4 First slide label
-                                p.h6 Some representative placeholder content for the first slide.
-                        .carousel-item
-                            img.d-block.w-75.h-50(src='./assets/code-dump.jpg' alt='.6h6h..')
-                            .carousel-caption.d-none.d-md-block
-                                p.h4 First slide label
-                                p.h6 Some representative placeholder content for the first slide.
-                    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleFade' data-bs-slide='prev')
-                        span.carousel-control-prev-icon(aria-hidden='true')
-                        span.visually-hidden Previous
-                    button.carousel-control-next(type='button' data-bs-target='#carouselExampleFade' data-bs-slide='next')
-                        span.carousel-control-next-icon(aria-hidden='true')
-                        span.visually-hidden Next
-
+                            br
+                            strong For Queries:
+                            br
+                            | Dharani Dharan D - +91 9361502532 
+                            br
+                            | Sree Vadhani M - +91 9344304667
+            section#events.h-100.w-100.d-flex.ss
+               .event1 
+                p jkhuyfiubiyugiyug
             
         script(src="./client/landing.js") 
         script(src="./client/three.min.js")
