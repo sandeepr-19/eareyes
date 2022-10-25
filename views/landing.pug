@@ -1,5 +1,5 @@
 doctype html
-html(lang='en').h-100
+html(lang='en').h-100.mw-100
     head
         meta(charset='UTF-8')
         meta(http-equiv='X-UA-Compatible' content='IE=edge')
@@ -8,19 +8,40 @@ html(lang='en').h-100
         link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx' crossorigin='anonymous')
         // JavaScript Bundle with Popper
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa' crossorigin='anonymous')
-        link(rel='stylesheet' href='./client/landing.css')
+        //green sock
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        //animate css
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+        link(rel='stylesheet' href='./client/landing.css')
         title Eareyes
     body.h-100
+        header.ms-2
+            nav.navbar 
+                ul.nav-menu 
+                    li.nav-item 
+                        a.nav-link(herf="#") Home
+                    li.nav-item 
+                        a.nav-link(herf="#about") About
+                    li.nav-item 
+                        a.nav-link(herf="#") Events
+                    li.nav-item 
+                        a.nav-link(herf="#") Schedule
+                    li.nav-item 
+                        a.nav-link(herf="#") Contact
+                .hamburger 
+                    span.bar
+                    span.bar
+                    span.bar
         div.h-100#scrollsnap
-            section#hero.min-vh-100.w-100.d-flex
+            section#hero.min-vh-100.vw-100.d-flex
                 .d-flex.flex-column.mx-auto
-                    .d-flex.mx-auto
+                    .d-flex.mx-auto#title
                         p.h1.me-2#event-name Eareyes
-                            p.h3#hinge 2022
+                        p.h3.my-auto#hinge 2022
                     p.h4.mx-auto#hero-dep Department of Electronics and Instrumentation Engineering
-                    div#boom 
-            section#about.min-vh-100.w-100.d-flex
+                    img#boom(src="../assets/object.webp")
+            section#about.min-vh-100.mw-100.d-flex
                 .d-flex.flex-column.px-5
                     #box.border.rounded-4.p-4.m-5
                         p.h2 About The Department

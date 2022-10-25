@@ -17,7 +17,12 @@ general
   color:cornsilk; }
 
  #event-name{
-  font-size: 10vw;
+  font-size: 9vw;
+  font-weight: 20%;
+   font-family: "Saira Stencil One", cursive;
+ }
+ #hinge{
+  font-size: 7vw;
   font-weight: 20%;
    font-family: "Saira Stencil One", cursive;
  }
@@ -29,8 +34,92 @@ general
 
 #hero-dep{
   font-size: 5vw;
-  position: realtive;
+  position:relative;
+  text-align:center;
+}
+/* ------------------------------
+nav bar
+---------------------------------*/
+header{
+position: sticky;}
+li{
+  list-style: none;
+}
+
+.nav{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 60px;
+background-color: rgb(0, 0, 0);
+}
+
+.nav-title{
+  font-size: 2rem;
+}
+.nav-link{
+
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+
+  color: brown;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out ;
+  background-color: aliceblue;
+}
+
+@media (max-width:768px) {
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap:0;
+    flex-direction: column;
+    width: 100%;
     text-align:center;
+    transition: 0.3s;
+  }
+  .nav-item{
+    margin: 16px 0;
+
+  }
+  .nav-menu.active{
+    left: 0;
+  }
 }
 /* ------------------------------
 neon box effect 
@@ -60,25 +149,9 @@ neon box effect
  -------------------------------------------*/
 #boom{
 position: absolute;
-top: 25%;
-right: 30%;
-width: 200px;
-height: 200px;
-/* background-image: url("boom5.webp"); */
-background-size: cover;
-animation: crash 8s linear;
-}
-@keyframes crash {
-0%{
-translate: -100vw;
-background-image: url('../assets/object.webp');
-}
-49%{
-  background-image: url('../assets/object.webp')
-}
-49.1%{
-  translate: 0;
-  background-image: url('../assets/boom3.webp');
+top:38%;
+right: 100%;
+max-width: 30%;
+max-height: 50%;
 }
 
-}
