@@ -7,6 +7,7 @@ canvas {
   position: fixed;
   top:0;
   left:0;
+  height: 100vh;
   z-index: -1;
 }
 
@@ -41,12 +42,14 @@ general
 nav bar
 ---------------------------------*/
 header{
-position: sticky;}
+  background-color: black;
+
+position: fixed;}
 li{
   list-style: none;
 }
 
-.nav{
+.navbar{
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -134,13 +137,16 @@ neon box effect
  /*-------------------------------------- 
  scroll snaping 
  --------------------------------------------*/
- #scrollsnap{
+ /* #scrollsnap{
   overflow-y: scroll;
   scroll-snap-type:y mandatory;
   scroll-behavior: smooth;
- } 
+ } */
  .ss, .ss1{
-  scroll-snap-align: start;
+  /* border-style:solid ;
+  border-color: aliceblue;
+  margin-bottom:3px ;
+  scroll-snap-align: start; */
   align-items: center;
   justify-content: center;
  }
@@ -156,3 +162,24 @@ max-width: 30%;
 max-height: 50%;
 }
 
+ /*-------------------------------------- 
+events
+ -------------------------------------------*/
+
+ #ee{
+  margin-top: 70px;
+ margin-bottom: 20vh;
+  font-size: 300%;
+ }
+ #eh{
+  font-size: 250%;
+ }
+ #eh1{
+  font-size: 200%;
+ }
+ #ep{
+  font-size: 100%;
+ }
+ #er{
+  font-size: 50%;
+ }
