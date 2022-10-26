@@ -7,7 +7,6 @@ canvas {
   position: fixed;
   top:0;
   left:0;
-  height: 100vh;
   z-index: -1;
 }
 
@@ -43,8 +42,7 @@ nav bar
 ---------------------------------*/
 header{
   background-color: black;
-
-position: fixed;}
+position: sticky;}
 li{
   list-style: none;
 }
@@ -141,7 +139,7 @@ neon box effect
   overflow-y: scroll;
   scroll-snap-type:y mandatory;
   scroll-behavior: smooth;
- } */
+ }  */
  .ss, .ss1{
   /* border-style:solid ;
   border-color: aliceblue;

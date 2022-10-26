@@ -118,7 +118,7 @@ gsap
 
 //event pin
 ScrollTrigger.create({
-  trigger: "#ee",
+  trigger: "#events",
   start: "top 10%",
   //scroller: "#scrollsnap",
   endTrigger: "#schedule",
@@ -135,6 +135,7 @@ gsap
       scrub: 1,
       start: "top center",
       end: "top 25%",
+      markers: true,
     },
   })
   .from("#eh1", {
